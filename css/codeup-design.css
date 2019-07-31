@@ -23,10 +23,12 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 64px;
     font-weight: lighter;
+    margin-bottom: 1em;
 }
 
 h2 {
     font-size: 48px;
+    margin-bottom: .9em;
 }
 
 h3 {
@@ -109,7 +111,7 @@ nav li {
     color: white;
     text-align: center;
     line-height: 190px;
-    border-radius: 100px;
+    border-radius: 110px;
     font-size: 2.5em;
 }
 
@@ -121,7 +123,7 @@ nav li {
     ". design . develop ."
     ". . . . ."
     ". support . host .";
-
+    margin-bottom: 200px;
 }
 
 .design{
@@ -144,8 +146,48 @@ nav li {
 .icon {
     height: 18px;
     width: 18px;
+    font-family: 'Anton', sans-serif;
+    /*fon;t-weight: bold*/
+    font-size: .75em;
+    border-radius: 10px;
+    text-align: center;
 }
 
+
+
+.selected{
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+}
+
+article{
+    display: grid;
+    grid-template-rows: 1fr 5%;
+    grid-template-columns: 10% 1fr 10%;
+}
+article img{
+    grid-area: 1/2/2/3;
+    width:400px;
+    height: auto;
+    border: 10px solid var(--dark-gray);
+    border-radius: 10px;
+}
+.icon-bar{
+    grid-area: 2/2/3/3;
+}
+.featured{
+    font-family: 'Abel', sans-serif;
+    /*display: block;*/
+    font-size: 1.5em;
+    display: flex;
+
+}
+
+.featured ul{
+    display: flex;
+}
 /* Quickly add a background color to a div for visual inspection */
 .test {
     background: fuchsia;
