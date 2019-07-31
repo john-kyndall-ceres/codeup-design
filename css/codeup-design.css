@@ -1,4 +1,4 @@
-/* Default styling */
+/* 11111 Default styling */
 
 :root {
     --red: #E6563B;
@@ -17,10 +17,12 @@
 
 h1, h2, h3, h4, h5 {
     font-family: 'Anton', sans-serif;
+    text-align: center;
 }
 
 h1 {
     font-size: 64px;
+    font-weight: lighter;
 }
 
 h2 {
@@ -42,6 +44,62 @@ h5 {
 p {
     font-family: 'Abel', sans-serif;
 }
+
+/* 222222 Default styling */
+
+/* 111111 Banner styling */
+
+.header-container {
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "logo"
+    "brand"
+    "nav";
+    margin-bottom: 50px;
+}
+
+.banner-logo {
+    height: 105px;
+    background: white;
+    margin-bottom: 50px;
+    grid-area: logo;
+}
+
+.banner-logo img {
+    height: 210px;
+    position: relative;
+    bottom: 52.5px;
+    display: block;
+    margin: auto;
+}
+
+.brand-heading {
+    grid-area: brand;
+    font-size: 4em;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    font-family: 'Abel', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+    font-size: 1.25em;
+}
+
+/* 222222 Banner styling */
+
 
 .logo{
     font-family: 'Anton', sans-serif;
@@ -95,4 +153,5 @@ p {
 
 body {
     background-color: var(--light-gray);
+    margin-top: 75px;
 }
