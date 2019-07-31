@@ -1,0 +1,63 @@
+/* Default styling */
+
+:root {
+    --red: #E6563B;
+    --orange: #EB9D3A;
+    --green: #7CB06C;
+    --teal: #00ABA9;
+    --light-gray: #F0F0F0;
+    --dark-gray: #E6E6E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 28px;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+}
+
+.logo {
+    height: 105px;
+    width: 105px;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
+}
+
+/* Quickly add a background color to a div for visual inspection */
+.test {
+    background: fuchsia;
+}
+
+body {
+
+}
