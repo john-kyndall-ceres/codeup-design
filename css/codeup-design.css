@@ -122,7 +122,9 @@ nav li {
     grid-template-areas:
     ". design . develop ."
     ". . . . ."
-    ". support . host .";
+    ". support . host ."
+    ". main main main .";
+
     margin-bottom: 200px;
 }
 
@@ -143,50 +145,64 @@ nav li {
     background-color: var(--teal);
     grid-area: host;
 }
-.icon {
-    height: 18px;
-    width: 18px;
-    font-family: 'Anton', sans-serif;
-    /*fon;t-weight: bold*/
-    font-size: .75em;
-    border-radius: 10px;
-    text-align: center;
+
+main {
+    grid-area: main;
 }
 
-
+.icon {
+    height: 2em;
+    width: 2em;
+    font-family: 'Anton', sans-serif;
+    /*fon;t-weight: bold*/
+    font-size: 1em;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 2em;
+}
 
 .selected{
     font-family: 'Abel', sans-serif;
     text-align: center;
     display: block;
     font-size: 1.5em;
+    margin-bottom: 2em;
 }
 
 article{
     display: grid;
     grid-template-rows: 1fr 5%;
     grid-template-columns: 10% 1fr 10%;
+    margin-bottom: 2em;
 }
 article img{
     grid-area: 1/2/2/3;
-    width:400px;
+    width: 100%;
     height: auto;
     border: 10px solid var(--dark-gray);
     border-radius: 10px;
+    padding: 0;
 }
 .icon-bar{
     grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
+.icon-bar ul  {
+    display: flex;
+    list-style: none;
+
+}
+
+.icon-bar li  {
+    padding: 0 6px;
+}
+
 .featured{
     font-family: 'Abel', sans-serif;
-    /*display: block;*/
-    font-size: 1.5em;
-    display: flex;
-
-}
-
-.featured ul{
-    display: flex;
+    font-size: 1.25em;
 }
 /* Quickly add a background color to a div for visual inspection */
 .test {
