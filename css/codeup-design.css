@@ -222,7 +222,7 @@ article img{
 
 /*small media queries*/
 
-@media screen and (min-width:576px){
+@media screen and (min-width:576px) {
 
     body {
         /*background-color: var(--light-gray);*/
@@ -234,10 +234,7 @@ article img{
         /*display: grid;*/
         grid-template-rows: 50px 75px 1px;
         /*grid-template-columns: 1fr;*/
-        grid-template-areas:
-                "logo"
-                "nav"
-                "brand";
+        grid-template-areas: "logo" "nav" "brand";
         margin-bottom: 50px;
     }
 
@@ -267,7 +264,7 @@ article img{
     }
 
     nav li:nth-of-type(2) {
-    margin-right: 105px;
+        margin-right: 105px;
     }
 
     nav li:nth-of-type(3) {
@@ -290,7 +287,7 @@ article img{
         font-weight: lighter;
     }
 
-    .products{
+    .products {
         display: flex;
         justify-content: center;
         /*grid-template-columns: 5% 1fr 5% 1fr 5%;*/
@@ -303,7 +300,8 @@ article img{
 
         margin-bottom: 20px;
     }
-    .logo{
+
+    .logo {
         /*font-family: 'Anton', sans-serif;*/
         height: 105px;
         width: 105px;
@@ -315,14 +313,16 @@ article img{
         font-size: 1.25em;
         margin: 0 3px;
     }
-    .hr{
-    display: block;
+
+    .hr {
+        display: block;
         grid-area: hr;
         width: 65%;
         height: 0;
         margin: 0 auto;
     }
-    .selected{
+
+    .selected {
         font-family: 'Abel', sans-serif;
         /*text-align: center;*/
         /*display: block;*/
@@ -336,25 +336,25 @@ article img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 50px 50px 250px 250px;
-        grid-template-areas:
-        "hr hr"
-        "selected selected"
-        "art-1 art-2"
-        "art-3 art-4";
+        grid-template-areas: "hr hr" "selected selected" "art-1 art-2" "art-3 art-4";
     }
 
-    article:nth-of-type(1){
+    article:nth-of-type(1) {
         grid-area: art-1;
     }
-    article:nth-of-type(2){
+
+    article:nth-of-type(2) {
         grid-area: art-2;
     }
-    article:nth-of-type(3){
+
+    article:nth-of-type(3) {
         grid-area: art-3;
     }
-    article:nth-of-type(4){
-          grid-area: art-4;
-      }
+
+    article:nth-of-type(4) {
+        grid-area: art-4;
+    }
+
     .icon {
         height: 18px;
         width: 18px;
@@ -365,22 +365,83 @@ article img{
         /*text-align: center;*/
         line-height: 18px;
     }
-    .featured{
+
+    .featured {
         font-family: 'Abel', sans-serif;
         font-size: 1em;
     }
+
     /*.icon-bar{*/
     /*    !*grid-area: 2/2/3/3;*!*/
     /*    !*display: flex;*!*/
     /*    justify-content: space-around;*/
     /*    !*align-items: baseline;*!*/
-
     /*}*/
-
-    article{
+    article {
         /*display: grid;*/
         /*grid-template-rows: 1fr 5%;*/
         /*grid-template-columns: 10% 1fr 10%;*/
         margin-bottom: 70px;
-        /* Since border-box is default, increasing margin-bottom moves the rows closer based on our current row size. /*
+        /* Since border-box is default, increasing margin-bottom moves the rows closer based on our current row size.*/
+    }
 }
+
+
+@media screen and (min-width:768px){
+
+
+    .header-container {
+        /*display: grid;*/
+        grid-template-rows: 1fr;
+        grid-template-columns: 20% 25% 17.5% 37.5%;
+        grid-template-areas: "logo brand . nav";
+        /*margin-bottom: 50px;*/
+        background-color: white;
+        margin-top: 50px;
+        height: 50px;
+    }
+
+    .banner-logo{
+        background-color: white;
+        height: 50px;
+    }
+
+    .banner-logo img {
+        height: 105px;
+        position: relative;
+        top: -24.5px;
+        /*bottom: 52.5px;*/
+        display: block;
+        margin: auto;
+        left: 20px;
+    }
+
+    .brand-heading {
+        /*grid-area: brand;*/
+        /*font-size: 2em;*/
+        /*font-family: 'Abel', sans-serif;*/
+        /*text-align: center;*/
+        line-height: 50px;
+    }
+
+    nav ul {
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    list-style: none;*/
+    /*    background: white;*/
+        height: 50px;
+    }
+    nav li:nth-of-type(2) {
+        margin: 0 15px;
+    }
+
+    nav li:nth-of-type(3) {
+        margin: 0 15px;
+    }
+
+    /*nav li{*/
+    /*    margin: 0 15px;*/
+    /*}*/
+}
+
