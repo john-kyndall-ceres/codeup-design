@@ -215,12 +215,16 @@ article img{
     font-family: 'Abel', sans-serif;
     font-size: 1.25em;
 }
+
+.last-container {
+    display: none;
+}
 /* Quickly add a background color to a div for visual inspection */
 .test {
     background: fuchsia;
 }
 
-/*small media queries*/
+/*small media queries -------------------------------------- */
 
 @media screen and (min-width:576px) {
 
@@ -386,6 +390,7 @@ article img{
     }
 }
 
+/* Medium Screen Media Query ------------------------------ */
 
 @media screen and (min-width:768px){
 
@@ -440,8 +445,96 @@ article img{
         margin: 0 15px;
     }
 
-    /*nav li{*/
-    /*    margin: 0 15px;*/
-    /*}*/
+    main {
+        /*grid-area: main;*/
+        /*display: grid;*/
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 50px 250px 250px;
+        grid-template-areas:
+                "hr hr hr"
+                "selected selected last"
+                "art-1 art-2 last"
+                "art-3 art-4 last";
+    }
+
+    .last-container {
+        display: block;
+        grid-area: last;
+    }
+
+    .selected {
+        /*font-family: 'Abel', sans-serif;*/
+        text-align: left;
+        /*display: block;*/
+        font-size: .75em;
+        /*margin-bottom: 1.5em;*/
+        /*grid-area: selected;*/
+        margin-left: 26px;
+    }
+
+    .the-last {
+        font-family: 'Abel', sans-serif;
+        font-size: .75em;
+    }
+
+    .story-tweet {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 1fr 25px 1fr 25px 1fr 35px 20px 35px;
+        grid-template-areas:
+                "pic1 title1"
+                ". ."
+                "pic2 title2"
+                ". ."
+                "pic3 title3"
+                ". ."
+                "twitter twitter"
+                "tweet-text tweet-text";
+    }
+
+    .pic1 {
+        grid-area: pic1;
+    }
+
+    .pic2 {
+        grid-area: pic2;
+    }
+
+    .pic3 {
+        grid-area: pic3;
+    }
+
+    .title1 {
+        grid-area: title1;
+    }
+
+    .title2 {
+        grid-area: title2;
+    }
+
+    .title3 {
+        grid-area: title3;
+    }
+
+    .twitter {
+        grid-area: twitter;
+        font-family: 'Abel', sans-serif;
+        font-size: .75em;
+        display: flex;
+    }
+
+    .twitter i {
+        margin-right: 10px;
+        font-size: 1.5em;
+        color: #1D8DF0;
+    }
+
+    .tweet-text {
+        grid-area: tweet-text;
+        font-family: 'Abel', sans-serif;
+        font-size: .75em;
+        margin-top: 10px;
+    }
 }
 
