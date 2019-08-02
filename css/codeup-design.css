@@ -195,7 +195,7 @@ nav li {
 
 article{
     display: grid;
-    grid-template-rows: 1fr 5%;
+    grid-template-rows: 1fr 3px 5%;
     grid-template-columns: 10% 1fr 10%;
     margin-bottom: 2em;
 }
@@ -208,7 +208,7 @@ article img{
     padding: 0;
 }
 .icon-bar{
-    grid-area: 2/2/3/3;
+    grid-area: 3/2/4/3;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -221,7 +221,7 @@ article img{
 }
 
 .icon-bar li  {
-    padding: 0 3px;
+    padding: 0 6px;
 }
 
 .featured{
@@ -252,7 +252,7 @@ article img{
         grid-template-rows: 50px 75px 1px;
         /*grid-template-columns: 1fr;*/
         grid-template-areas: "logo" "nav" "brand";
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .banner-logo {
@@ -270,6 +270,7 @@ article img{
         display: block;
         margin: auto;
     }
+
 
     nav ul {
         display: flex;
@@ -300,8 +301,27 @@ article img{
         /*text-align: center;*/
     }
 
+    .visual-design {
+        font-size: 36px;
+        font-weight: lighter;
+        margin-bottom: 1.25em;
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+        line-height: 120%;
+        /*transform: scale(1.4, 1.2);*/
+    }
+
+    .utah {
+        /*font-weight: lighter;*/
+        font-size: 32px;
+    }
+
     header h4 {
         font-weight: lighter;
+    }
+
+    .break{
+        display: none;
     }
 
     .products {
@@ -334,7 +354,7 @@ article img{
     .hr {
         display: block;
         grid-area: hr;
-        width: 65%;
+        width: 50%;
         height: 0;
         margin: 0 auto;
     }
@@ -505,11 +525,11 @@ article img{
         grid-template-rows: 1fr 25px 1fr 25px 1fr 35px 20px 35px;
         grid-template-areas:
                 "pic1 title1"
-                ". ."
+                ". . "
                 "pic2 title2"
-                ". ."
+                ". . "
                 "pic3 title3"
-                ". ."
+                ". . "
                 "twitter twitter"
                 "tweet-text tweet-text";
     }
@@ -591,6 +611,14 @@ article img{
 
     .products {
         margin-bottom: 20px !important;
+    }
+
+    .featured{
+        font-size: .75em;
+    }
+
+    .icon-bar li  {
+        padding: 0 3px;
     }
 }
 
