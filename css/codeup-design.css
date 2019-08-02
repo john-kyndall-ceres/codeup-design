@@ -85,7 +85,7 @@ p {
 
 .brand-heading {
     grid-area: brand;
-    font-size: 4em;
+    font-size: 3.5em;
     font-family: 'Abel', sans-serif;
     text-align: center;
 }
@@ -108,28 +108,41 @@ nav li {
 
 /* 222222 Banner styling */
 
+.visual-design {
+    font-size: 48px;
+    font-weight: lighter;
+    margin-bottom: 1.25em;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    line-height: 120%;
+    transform: scale(1.4, 1.2);
+}
+
+.utah {
+    font-weight: lighter;
+}
 
 .logo{
     font-family: 'Anton', sans-serif;
-    height: 210px;
-    width: 210px;
+    height: 190px;
+    width: 190px;
     border: 10px solid white;
     color: white;
     text-align: center;
-    line-height: 190px;
+    line-height: 170px;
     border-radius: 110px;
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 
 .products{
     display: grid;
-    grid-template-columns: 5% 1fr 5% 1fr 5%;
-    grid-template-rows: 1fr 5% 1fr;
+    grid-template-columns: 10% 1fr 5% 1fr 10%;
+    grid-template-rows: 1fr 10px 1fr;
     grid-template-areas:
     ". design . develop ."
     ". . . . ."
-    ". support . host ."
-    ". main main main .";
+    ". support . host .";
+    /*". main main main .";*/
 
     margin-bottom: 200px;
 }
@@ -152,9 +165,9 @@ nav li {
     grid-area: host;
 }
 
-main {
-    grid-area: main;
-}
+/*main {*/
+/*    grid-area: main;*/
+/*}*/
 
 .hr{
     border: 1px solid var(--dark-gray);
